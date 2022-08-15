@@ -1,6 +1,6 @@
  ![IGNITE logo](images/logo.png)
 # IGNITE
-A companion web application project utilizing a VALORANT API to pull information from the game regarding, agents, maps, players, etc.
+A companion web application project utilizing a VALORANT API to pull information from the game regarding: agents, maps, players, etc.
 
 Contributions from [Uyen](https://github.com/nguyeud) and [Duc](https://github.com/illumki).
 

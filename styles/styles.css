@@ -10,14 +10,14 @@ html {
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Source Sans Pro', sans-serif; */
 }
+
+/* LINKS */
 a {
     text-decoration: none;
     color: #000;
 }
-
-/* TYPOGRAPHY */
-.text-bold {
-    font-weight: 700;
+a:hover {
+    color: rgb(255,70,84);
 }
 
 /* ICONS */
@@ -27,6 +27,11 @@ a {
 }
 .fi:hover {
     color: rgb(255,70,84);
+}
+
+/* TYPOGRAPHY */
+.text-bold {
+    font-weight: 700;
 }
 
 /* BUTTONS */

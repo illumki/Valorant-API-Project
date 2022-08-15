@@ -25,12 +25,13 @@ body {
 
 /* MAIN */
 main {
+    width: 100vw;
+    height: calc(100vh - 10rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: calc(100vh - 10rem);
+    gap: 2rem;
 }
 /* Title Image */
 #main-img-container {
@@ -45,10 +46,27 @@ main {
 #main-subtitle {
     font-size: 2.4rem;
 }
+/* Searchbar */
+#main-searchbar {
+    width: 60rem;
+    height: 6rem;
+    background-color: rgb(236,232,225);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+#searchbar-img {
+    height: 4rem;
+    border-right: 2px solid #d3d3d3;
+}
+/* Links */
+#main-links {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
 .main-links {
     font-size: 1.4rem;
+    font-weight: 500;
     transition: color .2s ease-in;
-}
-.main-links:hover {
-    color: rgb(255,70,84);
 }

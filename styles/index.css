@@ -4,7 +4,6 @@ html {
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Source Sans Pro', sans-serif; */
 }
-
 body {
     min-height: 100vh;
 
@@ -22,4 +21,34 @@ body {
     background-position: center;
     /* blur effect */
     backdrop-filter: blur(.5rem);
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 10rem);
+}
+/* Title Image */
+#main-img-container {
+    height: 100px;
+    overflow: hidden;
+}
+#main-img {
+    width: 600px;
+    margin-top: calc(-337.42px / 3);
+}
+/* Subtitle */
+#main-subtitle {
+    font-size: 2.4rem;
+}
+.main-links {
+    font-size: 1.4rem;
+    transition: color .2s ease-in;
+}
+.main-links:hover {
+    color: rgb(255,70,84);
 }

@@ -1,0 +1,22 @@
+root {
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+
+    /* background image */
+    background: 
+    /* transparent overlay */
+    linear-gradient(
+        rgba(236, 232, 225, 0.2), 
+        rgba(236, 232, 225, 0.2)
+      ), 
+    /* image */
+    url(/official-assets/lny-wallpapers/LNY_Sage-5_CallBack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* blur effect */
+    backdrop-filter: blur(.5rem);
+}

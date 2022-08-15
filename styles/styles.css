@@ -30,11 +30,17 @@ a:hover {
 }
 
 /* TYPOGRAPHY */
+div, p, span {
+    color: #000;
+}
 .text-bold {
     font-weight: 700;
 }
 
 /* BUTTONS */
+button {
+    color: #000;
+}
 .btn-medium {
     width: 10rem;
     height: 4rem;
@@ -86,4 +92,23 @@ nav {
     font-family: 'Anton', sans-serif;
     color: #161A26;
     font-size: 2.4rem;
+}
+
+/* LIGHT/DARK MODE */
+#mode-container {
+    width: 5rem;
+    height: 3rem;
+    border-radius: calc(3rem / 2);
+    background-color: rgb(236,232,225);
+    margin-left: 4rem;
+}
+#mode-circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
 }

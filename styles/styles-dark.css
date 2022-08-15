@@ -1,0 +1,30 @@
+/* LINKS */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* TYPOGRAPHY */
+div, p, span {
+    color: #fff;
+}
+
+/* BUTTONS */
+button {
+    color: #fff;
+}
+
+/* NAVIGATION */
+#logo-text {
+    color: #ECE8E1;
+}
+
+/* LIGHT/DARK MODE */
+#mode-container {
+    background-color: rgb(22,26,38);
+}
+#mode-circle {
+    background-color: rgba(113,127,173,.5);
+    top: 5px;
+    left: 25px;
+}

@@ -12,15 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Flaticons -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link id="dark-stylesheet" rel="stylesheet" />
+    <link id="dark-stylesheet-index" rel="stylesheet" />
 </head>
 <body>
     <nav>
         <div id="nav-left">
             <a href="index.html"><img id="logo-img" src="images/logo.png" alt="logo"></a>
             <div id="logo-text">IGNITE</div>
+            <div id="mode-container">
+                <div id="mode-circle" onclick="changeMode()"></div>
+            </div>
         </div>
         <div id="nav-right">
             <button id="btn-login" class="btn-medium">LOG IN</button>
@@ -56,5 +63,6 @@
             Riot Games, VALORANT, and any associated logos are trademarks, service marks, and/or registered trademarks of Riot Games, Inc. This project is in no way affiliated with, authorized, maintained, sponsored or endorsed by Riot Games, Inc or any of its affiliates or subsidiaries.
         </div>
     </footer>
+    <script src="scripts/mode.js"></script>
 </body>
 </html>

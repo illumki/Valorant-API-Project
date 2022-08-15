@@ -66,6 +66,9 @@ nav {
     gap: 2rem;
 }
 /* Logo */
+#nav-left > a {
+    height: 40px;
+}
 #logo-img {
     width: 4rem;
 }

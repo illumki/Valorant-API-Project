@@ -11,8 +11,8 @@ body {
     background: 
     /* transparent overlay */
     linear-gradient(
-        rgba(236,232,225,0.2), 
-        rgba(236,232,225,0.2)
+        rgba(236,232,225,0.3), 
+        rgba(236,232,225,0.3)
       ), 
     /* image */
     url(/official-assets/lny-wallpapers/LNY_Sage-5_CallBack.jpg);
@@ -33,7 +33,7 @@ main {
     align-items: center;
     gap: 2rem;
 }
-/* Title Image */
+/* Title */
 #main-img-container {
     height: 100px;
     overflow: hidden;
@@ -60,11 +60,8 @@ main {
     height: 4rem;
     border-right: 2px solid #d3d3d3;
 }
-#main-searchbar-player {
+#main-searchbar-player, #main-searchbar-tag {
     width: 80%;
-}
-#main-searchbar-tag {
-    width: 20%;
 }
 #main-searchbar-tag-label {
     font-size: 1.8rem;

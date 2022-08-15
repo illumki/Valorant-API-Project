@@ -1,5 +1,8 @@
-root {
+html {
     font-size: 10px;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 body {
@@ -9,8 +12,8 @@ body {
     background: 
     /* transparent overlay */
     linear-gradient(
-        rgba(236, 232, 225, 0.2), 
-        rgba(236, 232, 225, 0.2)
+        rgba(236,232,225,0.2), 
+        rgba(236,232,225,0.2)
       ), 
     /* image */
     url(/official-assets/lny-wallpapers/LNY_Sage-5_CallBack.jpg);

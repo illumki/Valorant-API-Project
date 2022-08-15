@@ -5,6 +5,50 @@
     box-sizing: border-box;
 }
 
-root {
+html {
     font-size: 10px;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+#nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+/* Logo */
+#logo {
+    width: 4rem;
+}
+#logo-text {
+    font-family: 'Anton', sans-serif;
+    color: #161A26;
+    font-size: 2.4rem;
+}
+
+/* BUTTONS */
+.btn-medium {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+/* Individual Buttons */
+#btn-login {
+    background-color: rgb(255,70,84);
+    transition: background-color .4s ease-in;
+}
+#btn-login:hover {
+    background-color: transparent;
+    border: 2px solid rgb(255,70,84);
+    cursor: pointer;
 }

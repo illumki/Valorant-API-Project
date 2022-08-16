@@ -40,9 +40,15 @@ nav {
     align-items: center;
     gap: 2rem;
 }
-/* Logo */
+#nav-left > a {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+}
 #logo-img {
     width: 4rem;
+    height: 4rem;
 }
 #logo-text {
     font-family: 'Anton', sans-serif;
@@ -53,7 +59,7 @@ nav {
 /* MAIN */
 main {
     width: 100vw;
-    height: calc(100vh - 15rem);
+    height: calc(100vh - 16rem);
     display: flex;
     flex-direction: column;
     justify-content: center;

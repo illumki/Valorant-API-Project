@@ -5,8 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo-favicon.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Flaticons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/leaderboard.css" />
 </head>
 <body>
-    
+    <nav>
+        <div id="nav-top">
+            <a href="../index.html"><img id="logo-img" src="../images/logo.png" alt="logo"></a>
+        </div>
+        <div id="nav-bottom">
+            <a class="nav-link" href=""><i class="fi fi-sr-apps nav-icon"></i></a>
+            <a class="nav-link" href=""><i class="fi fi-sr-time-past nav-icon"></i></a>
+            <a class="nav-link" href=""><i class="fi fi-sr-play nav-icon"></i></a>
+            <a id="nav-link-highlight" class="nav-link" href="#"><i id="nav-icon-highlight" class="fi fi-sr-user nav-icon"></i></a>
+            <a class="nav-link" href=""><i class="fi fi-ss-map nav-icon"></i></a>
+            <a class="nav-link" href=""><i class="fi fi-sr-trophy nav-icon"></i></a>
+            <a class="nav-link" href=""><i class="fi fi-sr-megaphone nav-icon"></i></a>
+            <a class="nav-link" href=""><i class="fi fi-sr-settings nav-icon"></i></a>
+            <a class="nav-link" href=""><i class="fi fi-sr-enter nav-icon"></i></a>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div id="mode-container">
+                <div id="mode-circle" onclick="changeMode()"></div>
+            </div>
+        </header>
+        <section id="agent-container">
+            
+        </section>
+    </main>
+    <script src="../scripts/leaderboard.js"></script>
+    <script src="../scripts/mode.js"></script>
 </body>
 </html>

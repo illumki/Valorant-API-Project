@@ -137,6 +137,13 @@ nav {
     color: #ff4654;
 }
 
+/* HEADER */
+header {
+    height: 11rem;
+    display: flex;
+    align-items: center;
+}
+
 /* MAIN */
 main {
     width: calc(100vw - 100px);

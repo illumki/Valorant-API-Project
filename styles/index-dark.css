@@ -7,7 +7,7 @@ body {
         rgba(22,26,38,0.5)
       ), 
     /* image */
-    url(/official-assets/lny-wallpapers/LNY_Sage-5_CallBack.jpg);
+    url(../official-assets/lny-wallpapers/LNY_Sage-5_CallBack.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

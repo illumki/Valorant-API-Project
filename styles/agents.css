@@ -4,3 +4,30 @@ html {
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Source Sans Pro', sans-serif; */
 }
+
+/* AGENT */
+.agent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Agent List */
+.role-list {
+    border-left: 1px solid #808080;
+    margin-bottom: 2rem;
+}
+.text-list {
+    margin-left: 1rem;
+    padding: 1rem 1rem;
+    width: 10rem;
+    border-radius: 1rem;
+    transition: background-color .2s ease-in;
+}
+.text-list:hover {
+    background-color: rgba(113,127,173,.2);
+    cursor: pointer;
+}
+/* Agent */
+#agent {
+   
+}

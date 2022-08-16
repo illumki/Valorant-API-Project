@@ -24,6 +24,13 @@ a:hover {
     color: rgb(255,70,84);
 }
 
+/* LISTS */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 /* ICONS */
 .fi {
     font-size: 2.4rem;
@@ -41,6 +48,15 @@ div, p, span {
 }
 .text-bold {
     font-weight: 700;
+}
+.container-header {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.text-list {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 1rem;
 }
 
 /* BUTTONS */

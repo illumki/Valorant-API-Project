@@ -15,12 +15,39 @@ body {
         rgba(236,232,225,0.3)
       ), 
     /* image */
-    url(/official-assets/lny-wallpapers/LNY_Sage-5_CallBack.jpg);
+    url(../official-assets/lny-wallpapers/LNY_Sage-5_CallBack.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /* blur effect */
     backdrop-filter: blur(.5rem);
+
+    flex-direction: column;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: transparent;
+    padding: 3rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+/* Logo */
+#logo-img {
+    width: 4rem;
+}
+#logo-text {
+    font-family: 'Anton', sans-serif;
+    color: #161A26;
+    font-size: 2.4rem;
 }
 
 /* MAIN */

@@ -12,49 +12,69 @@ fetch(url)
     })
     .then((data) => {
         // import data in API
-        let API = data.data;
+        const API = data.data;
         console.log("Array", API);
 
         // AGENTS
         // define agent roles
-        const rolesAgent = {};
-        for(const agent of API) {
-            if(agent["isPlayableCharacter"] == true) {
-                if(rolesAgent.hasOwnProperty(agent["role"]["displayName"])) {
-                    rolesAgent[agent["role"]["displayName"]].push(agent["displayName"])
+        const agentRoles = {};
+        const agents = [];
+        for (const agent of API) {
+            if (agent["isPlayableCharacter"] == true) {
+                agents.push(agent["displayName"]);
+                if (agentRoles.hasOwnProperty(agent["role"]["displayName"])) {
+                    agentRoles[agent["role"]["displayName"]].push(agent["displayName"])
                 } else {
-                    rolesAgent[agent["role"]["displayName"]] = [agent["displayName"]];
+                    agentRoles[agent["role"]["displayName"]] = [agent["displayName"]];
                 }
             }
         }
 
-        // alphabetize roles
-        const roles = Object.keys(rolesAgent).sort((a, b) => a.localeCompare(b));
+        // alphabetize roles and agents
+        const roles = Object.keys(agentRoles).sort((a, b) => a.localeCompare(b));
+        agents.sort((a, b) => a.localeCompare(b));
 
-        // iterate through roles in objects to iterate through agents
+        // iterate through roles in object to iterate through agents
         roles.forEach(role => {
             // alphabetize agents in role
-            let agents = rolesAgent[role].sort((a, b) => a.localeCompare(b));
+            let agents = agentRoles[role].sort((a, b) => b.localeCompare(a));
 
             // create HTML for initial role list
-            let roleListHTML = 
-            `
-            <div id="role-${role}" class="container-header">
-                ${role}
-            </div>
-            <ul id="role-list-${role}" class="role-list">
-            </ul>
-            `;
+            let roleListHTML =
+                `<div id="role-${role}" class="role-container">
+                    <div class="container-header">${role}</div>
+                    <ul id="role-list-${role}" class="role-list">
+                    </ul>
+                </div>`;
             agentListContainer.insertAdjacentHTML("beforeend", roleListHTML);
 
             // create HTML for each agent in role
             let agentRole = document.getElementById(`role-list-${role}`);
             agents.forEach(agent => {
-                let agentListHTML = 
-                `
-                <li class="text-list">${agent}</li>
-                `;
+                let agentListHTML =
+                    `<li id="${agent}" class="text-list">${agent}</li>`;
                 agentRole.insertAdjacentHTML("afterbegin", agentListHTML);
             });
         });
+
+        // load first agent
+        const firstAgents = agentRoles[roles[0]];
+        const firstAgent = firstAgents.sort((a, b) => a.localeCompare(b))[0];
+
+        for (const agent of API) {
+            let name = "";
+            let role = "";
+            let roleImg = "";
+            let bio = "";
+            let abilities = {};
+            let color = "";
+            if (agent["displayName"] == firstAgent) {
+                console.log(agent["displayName"]);
+                console.log(agent["abilities"]);
+                let agentHTML = ``;
+                
+            }
+        }
+
+        // query agent selected
     });

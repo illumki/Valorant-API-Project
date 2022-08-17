@@ -6,10 +6,12 @@ html {
 }
 
 /* AGENT */
-.agent-container {
+#agent-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    height: calc(100vh - 9rem);
 }
 /* Agent List */
 .role-list {
@@ -18,7 +20,7 @@ html {
 }
 .text-list {
     margin-left: 1rem;
-    padding: 1rem 1rem;
+    padding: .4rem .4rem;
     width: 10rem;
     border-radius: 1rem;
     transition: background-color .2s ease-in;
@@ -29,5 +31,8 @@ html {
 }
 /* Agent */
 #agent {
-   
+    width: 50rem;
+    height: 70rem;
+    border-radius: 2.4rem;
+    background-color: rgba(113,127,173,.2);
 }

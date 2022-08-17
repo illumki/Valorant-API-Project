@@ -62,17 +62,41 @@ fetch(url)
         const firstAgent = firstAgents.sort((a, b) => a.localeCompare(b))[0];
 
         for (const agent of API) {
-            let name = "";
-            let role = "";
-            let roleImg = "";
-            let bio = "";
-            let abilities = {};
-            let color = "";
             if (agent["displayName"] == firstAgent) {
-                console.log(agent["displayName"]);
-                console.log(agent["abilities"]);
-                let agentHTML = ``;
-                
+                // initialize variables for agent
+                let agentImg = agent["fullPortraitV2"];
+                let name = agent["displayName"];
+                let nickname = agent["developerName"];
+                let role = agent["role"]["displayName"];
+                let roleImg = agent["role"]["displayIcon"];
+                let bio = agent["description"];
+                let abilities = agent["abilities"];
+                let color = agent["backgroundGradientColors"][agent["backgroundGradientColors"].length - 1];
+
+                agentContainer.style.background = 'linear-gradient(to bottom right, rgb(236,232,225), #'+color+')';
+
+                let agentHTML = 
+                `<div id="agent-left">
+                    <div id="agent-left-top">
+                        <img id="agent-role-img" src="${roleImg}"/>
+                        <div id="agent-name">${name}</div>
+                    </div>
+                    <div id="agent-left-mid">
+                        <div id="agent-description">
+                            ${bio}
+                        </div>
+                    </div>
+                    <div id="agent-left-bottom">
+                        <ul id="agent-abiltities">
+                        </ul>
+                        <div id="agent-abiltity">
+                        </div>
+                    </div>
+                </div>
+                <div id="agent-right">
+
+                </div>`;
+                agentContainer.insertAdjacentHTML("beforeend", agentHTML);
             }
         }
 

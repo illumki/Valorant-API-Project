@@ -11,8 +11,8 @@ body {
     background: 
     /* transparent overlay */
     linear-gradient(
-        rgba(236,232,225,0.3), 
-        rgba(236,232,225,0.3)
+        rgba(22,26,38,0.5), 
+        rgba(22,26,38,0.5)
       ), 
     /* image */
     url(../official-assets/lny-wallpapers/LNY_Sage-5_CallBack.jpg);
@@ -52,7 +52,7 @@ nav {
 }
 #logo-text {
     font-family: 'Anton', sans-serif;
-    color: #161A26;
+    color: #ece8e1;
     font-size: 2.4rem;
 }
 

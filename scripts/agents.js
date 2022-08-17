@@ -73,7 +73,7 @@ fetch(url)
                 let abilities = agent["abilities"];
                 let color = agent["backgroundGradientColors"][agent["backgroundGradientColors"].length - 1];
 
-                agentContainer.style.background = 'linear-gradient(to bottom right, rgb(236,232,225), #'+color+')';
+                agentContainer.style.background = 'linear-gradient(to bottom right, #161a26, #'+color+')';
 
                 let agentHTML = 
                 `<div id="agent-left">

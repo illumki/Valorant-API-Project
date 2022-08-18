@@ -88,17 +88,22 @@ main {
     display: flex;
     align-items: center;
     gap: 2rem;
+    padding: 1rem;
 }
 #main-searchbar-img {
     height: 4rem;
     border-right: 2px solid #d3d3d3;
 }
-#main-searchbar-player, #main-searchbar-tag {
-    width: 80%;
+#main-searchbar-player {
+    width: 40%;
+}
+ #main-searchbar-tag {
+    width: 40%;
 }
 #main-searchbar-tag-label {
     font-size: 1.8rem;
     font-weight: 700;
+    color: #000;
 }
 /* Links */
 #main-links {

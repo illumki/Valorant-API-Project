@@ -63,6 +63,13 @@ div, p, span {
 button {
     color: #fff;
 }
+.btn-small {
+    width: 6rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
 .btn-medium {
     width: 10rem;
     height: 4rem;
@@ -71,11 +78,11 @@ button {
     font-weight: 700;
 }
 /* Individual Buttons */
-#btn-login {
+.btn {
     background-color: rgb(255,70,84);
     transition: background-color .2s ease-in;
 }
-#btn-login:hover {
+.btn:hover {
     background-color: transparent;
     border: 2px solid rgb(255,70,84);
     cursor: pointer;

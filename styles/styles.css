@@ -43,7 +43,7 @@ ul {
 }
 
 /* TYPOGRAPHY */
-div, p, span {
+div, p, span, ul {
     color: #fff;
 }
 .text-bold {
